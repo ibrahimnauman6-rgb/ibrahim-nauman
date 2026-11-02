@@ -1,3 +1,18 @@
 title: "CMC Power & Lighting Guides"
 description: "Power, cooling and lighting guides for Pakistan from CMC Group: Hyundai Power home backup, Hyundai LED commercial lighting and Enpower industrial generators."
-theme: minima
+author: "CMC Group"
+lang: en
+permalink: /:title/
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - README.md
+  - .pages.yml
