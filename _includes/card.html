@@ -1,0 +1,10 @@
+{% assign p = include.post %}{% assign words = p.content | strip_html | number_of_words %}{% assign mins = words | divided_by: 200 | plus: 1 %}
+<a class="card" href="{{ p.url | relative_url }}">
+  <div class="card-text">
+    <div class="card-meta">{{ site.author }}</div>
+    <h2 class="card-title">{{ p.title }}</h2>
+    <p class="card-excerpt">{{ p.description | default: p.excerpt | strip_html | truncate: 150 }}</p>
+    <div class="card-meta">{{ p.date | date: "%b %-d, %Y" }} &middot; {{ mins }} min read</div>
+  </div>
+  {% if p.cover %}<img class="card-thumb" src="{{ p.cover }}" alt="{{ p.cover_alt | default: p.title }}" loading="lazy">{% endif %}
+</a>
