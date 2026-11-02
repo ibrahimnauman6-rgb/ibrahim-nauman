@@ -24,8 +24,6 @@ content:
       - name: cover
         label: Cover image
         type: image
-        options:
-          media: images
       - name: cover_alt
         label: Cover image alt text
         type: string
