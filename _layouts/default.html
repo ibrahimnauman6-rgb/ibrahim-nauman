@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{% seo %}
+{% if page.cover %}{% if page.cover contains '://' %}{% assign og = page.cover %}{% else %}{% assign og = site.url | append: page.cover %}{% endif %}<meta property="og:image" content="{{ og }}">
+<meta name="twitter:card" content="summary_large_image">{% endif %}
+{% feed_meta %}
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">CMC Guides</a>
+    <a class="write" href="https://app.pagescms.org" rel="nofollow">Write</a>
+  </div>
+</nav>
+{{ content }}
+<footer class="site-footer">
+  <div class="footer-inner">&copy; {{ 'now' | date: '%Y' }} CMC Group of Companies. All rights reserved.</div>
+</footer>
+</body>
+</html>

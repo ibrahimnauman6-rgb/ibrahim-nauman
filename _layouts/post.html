@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{% assign words = content | strip_html | number_of_words %}{% assign mins = words | divided_by: 200 | plus: 1 %}
+<article class="post">
+  <header class="post-head">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}<p class="post-sub">{{ page.description }}</p>{% endif %}
+    <div class="byline">
+      <span class="avatar" aria-hidden="true">C</span>
+      <div>
+        <div class="byline-name">{{ site.author }}</div>
+        <div class="byline-meta">{{ mins }} min read &middot; {{ page.date | date: "%b %-d, %Y" }}</div>
+      </div>
+    </div>
+  </header>
+  {% if page.cover %}
+  <figure class="cover">
+    <img src="{{ page.cover }}" alt="{{ page.cover_alt | default: page.title }}">
+  </figure>
+  {% endif %}
+  <div class="post-body">
+    {{ content }}
+  </div>
+</article>
+{% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
+{% if others.size > 0 %}
+<section class="more">
+  <div class="more-inner">
+    <h2 class="more-title">More from {{ site.title }}</h2>
+    {% for post in others limit:3 %}{% include card.html post=post %}{% endfor %}
+  </div>
+</section>
+{% endif %}
