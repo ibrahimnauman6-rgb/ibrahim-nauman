@@ -5,6 +5,7 @@ description: "Connecting an industrial generator to an 11 kV plant in Pakistan:
   LV sets vs a step-up transformer, inrush, 11 kV earthing and keeping the DISCO
   feeder dead."
 date: 2026-11-17
+cover: /ibrahim-nauman/images/Cummins Generator at Coastal Ice Factory-1.png
 cover_alt: Industrial generator with a step-up transformer at a factory
 ---
 Around Karachi's fish harbour, along the Makran coast and in market towns across Sindh and south Punjab, the ice factory is busiest exactly when the grid is under the most strain. June brings the strongest demand for block ice, and often the worst load-shedding of the year. We at Enpower have talked through a Cummins generator for this job with a fair number of ice plant owners, and their questions are different from a cold store's. A cold store holds a temperature. An ice plant runs a production cycle around the clock, and every cut sets that cycle back.
