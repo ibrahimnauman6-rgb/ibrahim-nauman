@@ -12,6 +12,7 @@ description: >-
   How mosque committees in Pakistan can size a Hyundai generator for prayer-time
   peaks, the wudu pump and ACs, plus exhaust, earthing and logbook checks.
 date: 2026-11-24
+cover: /ibrahim-nauman/images/Hyundai generator in a mosque courtyard.png
 cover_alt: Canopied Hyundai generator beside a Lahore mosque courtyard
 ---
 It usually happens at the worst moment. The grid drops a few minutes before Maghrib, the fans slow to a stop, the hall goes dark and the imam's microphone dies halfway through. Mosque committees in Lahore, Multan and Karachi have told us this story more times than we can count, and it's often what finally gets them to look at a proper backup set instead of a borrowed petrol unit and a long extension lead.
